@@ -1,21 +1,39 @@
-The library management system would involve creating classes for books, library users, and the library itself. Each book class would have attributes such as the book's title, author, genre, and ISBN. The user class would have attributes such as the user's name, ID number, and the books they have checked out. The library class would have methods for adding and removing books, registering and deleting users, and checking out and returning books.
+Library Management System
+This is a Java-based project for a Library Management System. It allows users to add books to the library, register new users, check out books to users, return books, and search for books by keyword.
 
-The system would also utilize OOPs principles such as inheritance, encapsulation, and polymorphism. For example, a class for different types of books could inherit from the book class and have its own unique attributes. Encapsulation could be used to hide sensitive data such as a user's password or a book's availability. Polymorphism could be used to allow different types of users to interact with the library system, such as a librarian having more access than a regular user.
+Getting Started
+These instructions will help you to set up and run the Library Management System on your local machine.
 
-Overall, the library management system would be a unique project that utilizes Java and OOPs principles to create a functional and efficient way to manage a library's collection and user database.
 
-Define the Classes: The first step would be to define the classes for the system such as Book, User, and Library. Each class should have its own set of attributes and methods.
+Usage
+The Library Management System uses a menu-driven approach to allow the user to interact with the system. Once you run the program, you will see the following menu:
 
-Create the Main Method: The main method would act as the driver program and would be responsible for creating objects of the different classes and calling their methods.
+markdown
+Copy code
+Welcome to Library Management System.
+1. Add book
+2. Register user
+3. Check out book
+4. Return book
+5. Search books
+6. Exit
+To select an option, enter the corresponding number and press Enter. Follow the prompts to input the necessary information.
 
-Add Books: The Library class should have a method to add books to the library's collection. This method should take input from the user for the book's attributes and create a new object of the Book class.
+Adding a book
+To add a book to the library, select option 1 from the menu. Enter the book title, author, genre, and ISBN when prompted.
 
-Register Users: The Library class should also have a method to register new users. This method should take input from the user for the user's attributes and create a new object of the User class.
+Registering a user
+To register a new user, select option 2 from the menu. Enter the user's name and ID when prompted.
 
-Checkout Books: The Library class should have a method for checking out books. This method should take input from the user for the book they want to checkout and the user who is checking it out. The method should also update the book's availability status and add the book to the user's list of checked out books.
+Checking out a book
+To check out a book to a user, select option 3 from the menu. Enter the user's ID and the book's ISBN when prompted. If the book is available, it will be checked out to the user.
 
-Return Books: The Library class should have a method for returning books. This method should take input from the user for the book they want to return and the user who is returning it. The method should also update the book's availability status and remove the book from the user's list of checked out books.
+Returning a book
+To return a book, select option 4 from the menu. Enter the user's ID and the book's ISBN when prompted. If the book was checked out to the user, it will be returned to the library.
 
-Search Books: The Library class should have a method to search for books in the library's collection. This method should take input from the user for the book's attributes they are searching for and return a list of books that match the search criteria.
+Searching for books
+To search for books by keyword, select option 5 from the menu. Enter the keyword when prompted. Any books that match the keyword in the title, author, genre, or ISBN will be displayed.
 
-Display User Information: The User class should have a method to display the user's information such as their name and the books they have checked out.
+Exiting the program
+To exit the Library Management System, select option 6 from the menu.
+
